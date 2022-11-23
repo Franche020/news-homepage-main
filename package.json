@@ -1,0 +1,31 @@
+{
+  "name": "news-homepage-main",
+  "version": "1.0.0",
+  "description": "FrontEnd Mentor 3rd Project, junior",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Franche020/news-homepage-main.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "frontendmentor",
+    "sass"
+  ],
+  "author": "Francisco J Casado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Franche020/news-homepage-main/issues"
+  },
+  "homepage": "https://github.com/Franche020/news-homepage-main#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.56.1"
+  }
+}
