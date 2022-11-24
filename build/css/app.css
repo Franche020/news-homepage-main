@@ -117,9 +117,13 @@ main {
   font-weight: 700;
   letter-spacing: 0.4rem;
 }
+.articulo__boton a:hover {
+  cursor: pointer;
+  background-color: hsl(240deg, 100%, 5%);
+}
 
 aside {
-  margin-top: 5rem;
+  margin: 5rem 0;
   display: flex;
   background-color: hsl(240deg, 100%, 5%);
 }
@@ -150,4 +154,33 @@ aside {
 }
 .aside__seccion:first-child {
   margin-top: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 5rem 0;
+}
+
+.seccion {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+.seccion .seccion__contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.seccion .seccion__contenido h4 {
+  color: hsl(233deg, 8%, 79%);
+  font-size: 3rem;
+}
+.seccion .seccion__contenido h5 {
+  font-size: 1.8rem;
+}
+.seccion .seccion__contenido p {
+  line-height: 1.8;
+  margin: 0;
 }

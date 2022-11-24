@@ -1,0 +1,39 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 5rem 0;
+}
+
+.seccion {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    
+    .seccion__contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h4 {
+            color: v.$Gray;
+            font-size: 3rem;
+        }
+        h5 {
+            font-size: 1.8rem;
+        }
+        p {
+            line-height: 1.8;
+            margin: 0;
+        }
+    }
+
+
+}
+
+.seccion__imagen {
+
+}

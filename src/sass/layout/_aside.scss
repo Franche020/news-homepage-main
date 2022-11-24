@@ -2,7 +2,7 @@
 @use '../base/mixins' as m;
 
 aside {
-    margin-top: 5rem;
+    margin: 5rem 0;
     display: flex;
     background-color: v.$darkblue;
 }
@@ -33,4 +33,5 @@ aside {
     }
 }
 
+// TODO Verificar los espacios entre los elementos para que la linea quede centrada
 
