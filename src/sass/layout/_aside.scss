@@ -1,0 +1,36 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+aside {
+    margin-top: 5rem;
+    display: flex;
+    background-color: v.$darkblue;
+}
+.contenedor{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        color: v.$orange;
+        margin-bottom: 2rem;
+    }
+}
+.aside__seccion {
+    h3 {
+        color: v.$white;
+    }
+    p {
+        color: v.$Gray;
+        line-height: 1.8;
+    }
+    border-bottom: 0.1rem solid v.$Darkgray;
+    margin-top: 2rem;
+    &:last-child {
+        border: none;
+    }
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+

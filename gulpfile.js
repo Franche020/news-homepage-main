@@ -11,9 +11,20 @@ function css (done) {
     done();
 }
 
+function img (done) {
+    src('src/images/**/*.{jpg,svg,png}')
+    .pipe(dest('build/img'));
+
+    done();
+}
+
 function dev (done) {
     watch('src/sass/**/*.scss', css)
+   // watch()
+
+   done();
 }
 
 exports.css = css;
+exports.img = img;
 exports.dev = dev;

@@ -1,0 +1,36 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+}
+
+.logo {
+
+}
+
+.navegacion {
+    .navegacion__boton{
+        cursor: pointer;
+        @include m.mobile{
+            display: none;
+        }
+    }
+    .navegacion__enlaces {
+        display: none;
+        @include m.mobile{
+            display: flex;
+            gap: 5rem;
+        }
+        a{            
+            color: v.$darkblue;             
+            &:hover{
+                color:v.$orange;
+            }
+        }
+    }
+}
+

@@ -14,8 +14,6 @@
 
     <title>Frontend Mentor | News homepage</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
     <!-- FUENTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,75 +21,119 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
+    <link href="build/css/app.css" rel="stylesheet" />
   </head>
+
   <body>
-    <header>
-      <div class="logo"></div>
+    <div class="contenedor__principal">
+      <header>
+        <div class="logo">
+          <a href="index.html">
+            <img src="build/img/logo.svg" alt="logo blog" />
+          </a>
+        </div>
 
-      <nav class="navegacion">
-        <a href="#">Home</a>
-        <a href="#">New</a>
-        <a href="#">Popular</a>
-        <a href="#">Trending</a>
-        <a href="#">Categories</a>
-      </nav>
-    </header>
+        <nav class="navegacion">
+          <div class="navegacion__boton">
+            <img src="build/img/icon-menu.svg" alt="botón mostrar menu" />
+          </div>
 
-    <div class="contenedor">
+          <div class="navegacion__enlaces hidden">
+            <a href="#">Home</a>
+            <a href="#">New</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categories</a>
+          </div>
+        </nav>
+      </header>
+
       <main>
-        <div class="imagen-article"></div>
-        <h1>The Bright Future of Web 3.0?</h1>
+        <div class="articulo__imagen">
+          <img
+            srcset="
+            build/img/image-web-3-375w.jpg 686w,
+            build/img/image-web-3-1440w.jpg 1460w"
+            sizes="(min-width: 375px) 686w, 
+            1440w"
+            src="build/img/image-web-3-1440w.jpg"
+            alt="background image for article showing block forms with colors"
+          />
+        </div>
+
+        <h1 class="articulo__titulo">The Bright Future of Web 3.0?</h1>
         <p>
           We dive into the next evolution of the web that claims to put the
           power of the platforms back into the hands of the people. But is it
           really fulfilling its promise?
         </p>
-        <a class="boton">Read more</a>
+        <div class="articulo__boton">
+          <a>Read more</a>
+        </div>
+        
       </main>
 
-      <aside class="aisde">
-        <h2>New</h2>
-        <section>
-          <h3>Hydrogen VS Electric Cars</h3>
-          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-        </section>
-        <section>
-          <h3>The Downsides of AI Artistry</h3>
-          <p>
-            What are the possible adverse effects of on-demand AI image
-            generation?
-          </p>
-        </section>
-        <section>
-          <h3>Is VC Funding Drying Up?</h3>
-          <p>
-            Private funding by VC firms is down 50% YOY. We take a look at what
-            that means.
-          </p>
-        </section>
+      <aside>
+        <div class="contenedor">
+          <h2 class="aside__titulo">New</h2>
+          <section class="aside__seccion">
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </section>
+          <section class="aside__seccion">
+            <h3>The Downsides of AI Artistry</h3>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </section>
+          <section class="aside__seccion">
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </section>
+        </div>
       </aside>
 
       <section>
         <div class="seccion">
-          <div class="seccion__imagen seccion__imagen--primera"></div>
+          <div class="seccion__imagen">
+            <img
+              src="build/img/image-retro-pcs.jpg"
+              alt="Photo of old computers"
+            />
+          </div>
           <h4>01</h4>
           <h5>Reviving Retro PCs</h5>
           <p>What happens when old PCs are given modern upgrades?</p>
         </div>
         <div class="seccion">
-          <div class="seccion__imagen seccion__imagen--segunda"></div>
+          <div class="seccion__imagen">
+            <img
+              src="build/img/image-top-laptops.jpg"
+              alt="Photo of a keyboard from a laptop"
+            />
+          </div>
           <h4>02</h4>
           <h5>Top 10 Laptops of 2022</h5>
           <p>Our best picks for various needs and budgets.</p>
         </div>
         <div class="seccion">
-          <div class="seccion__imagen seccion__imagen--tercera"></div>
+          <div class="seccion__imagen">
+            <img
+              src="build/img/image-gaming-growth.jpg"
+              alt="Photo of a gamepad"
+            />
+          </div>
           <h4>03</h4>
           <h5>The Growth of Gaming</h5>
           <p>How the pandemic has sparked fresh opportunities.</p>
         </div>
       </section>
-    </div> <!-- .CONTENEDOR-->
+    </div>
+    <!-- .CONTENEDOR-->
 
     <div class="attribution">
       Challenge by
