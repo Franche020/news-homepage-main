@@ -6,6 +6,9 @@ section {
     flex-direction: column;
     gap: 3rem;
     margin: 5rem 0;
+    @include m.mobile{
+        flex-direction: row;
+    }
 }
 
 .seccion {
@@ -22,18 +25,18 @@ section {
             color: v.$Gray;
             font-size: 3rem;
         }
-        h5 {
+        a {
             font-size: 1.8rem;
+            color: v.$darkblue;
+            font-weight: 800;
+            &:hover {
+                cursor: pointer;
+                color: v.$orange;
+            }
         }
         p {
             line-height: 1.8;
             margin: 0;
         }
     }
-
-
-}
-
-.seccion__imagen {
-
 }

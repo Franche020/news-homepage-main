@@ -35,8 +35,11 @@ img {
 
 .contenedor__principal {
     max-width: 144rem;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
+    @include m.mobile{
+        width: 80%;
+    }
 }
 
 .hidden {
