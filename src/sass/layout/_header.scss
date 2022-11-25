@@ -5,7 +5,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2rem 0 2rem 0;
+    margin: 3rem 0 4rem 0;
+    @include m.mobile{
+        margin-bottom: 0;
+    }
 }
 
 .logo {
@@ -26,7 +29,8 @@ header {
             gap: 5rem;
         }
         a{            
-            color: v.$darkblue;             
+            color: v.$Darkgray;
+            font-size: 2rem;       
             &:hover{
                 color:v.$orange;
             }

@@ -9,6 +9,7 @@
         display: grid;
         grid-template-columns: repeat(3 , 1fr);
         gap: 3rem;
+        row-gap: 6rem;
         margin: 5rem auto 7rem auto;
 
         header {

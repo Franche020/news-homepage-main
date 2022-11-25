@@ -5,7 +5,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    margin: 5rem 0;
+    margin: 2rem 0 5rem 0;
     @include m.mobile{
         flex-direction: row;
     }
