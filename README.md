@@ -1,5 +1,7 @@
 # Frontend Mentor - News homepage
 
+[GitHub Pages](https://franche020.github.io/news-homepage-main/) challenges help you improve your coding skills by building realistic projects.
+
 ![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
