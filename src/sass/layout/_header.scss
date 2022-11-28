@@ -16,12 +16,19 @@ header {
 }
 
 .navegacion {
-    .navegacion__boton{
+    .navegacion__boton{ //! Puede que tenga que sacar esto de aqui
         cursor: pointer;
-        @include m.mobile{
-            display:  flex; //! Ocultar boton
+        .navegacion__boton--mostrar{
+            @include m.mobile{
+                display:  flex; //! Ocultar boton
+            }
+            @include m.tablet{
+                display: none;
+            }
+
         }
-        @include m.tablet{
+        
+        .navegacion__boton--cerrar{
             display: none;
         }
     }
