@@ -19,17 +19,37 @@ header {
     .navegacion__boton{
         cursor: pointer;
         @include m.mobile{
+            display:  flex; //! Ocultar boton
+        }
+        @include m.tablet{
             display: none;
         }
     }
     .navegacion__enlaces {
-        display: none;
-        @include m.mobile{
+        display: none;  //! Mostrar barra
+        flex-direction: column;  
+        position: absolute;
+        right: 0rem;
+        padding: 9rem 0 0 3rem;
+        width: 25rem;
+        height: 100%;
+        background-color: white;
+        gap: 3rem;  
+        
+        @include m.tablet{
             display: flex;
-            gap: 5rem;
+            position: inherit;
+            flex-direction: row;
+            gap: 2rem;      
+            width: auto;
+            height: auto;
+            padding: initial;
+        }
+        @include m.small-desktop{
+            gap: 5rem; 
         }
         a{            
-            color: v.$Darkgray;
+            color: v.$darkblue;
             font-size: 2rem;       
             &:hover{
                 color:v.$orange;
