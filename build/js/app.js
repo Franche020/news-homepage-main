@@ -12,7 +12,16 @@ let anchoCliente = window.visualViewport.width;
 app();
 
 function app () {
+    initEstado();
     mostrarMenu();
+}
+
+function initEstado() {
+    if (anchoCliente < 768) {
+        barraGrande('none','flex','none');
+    } else {
+        barraGrande('flex','none','none');
+    }
 }
 
 
