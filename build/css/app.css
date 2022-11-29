@@ -3,7 +3,9 @@ html {
   font-size: 62.5%;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit; /*hack par box model*/
 }
 
@@ -12,7 +14,13 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
@@ -32,12 +40,12 @@ img {
 
 .contenedor__principal {
   max-width: 144rem;
-  width: 95%;
-  margin: 0 auto;
+  max-width: 95%;
+  margin: 0 auto 2rem auto;
 }
-@media (min-width: 480px) {
+@media (min-width: 1140px) {
   .contenedor__principal {
-    width: 80%;
+    max-width: 80%;
   }
 }
 
@@ -58,7 +66,7 @@ img {
   .contenedor__principal {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    column-gap: 3rem;
     row-gap: 6rem;
     margin: 5rem auto 7rem auto;
   }
@@ -235,12 +243,19 @@ aside {
   margin: 5rem 0;
   display: flex;
   background-color: hsl(240deg, 100%, 5%);
+  height: fit-content;
+}
+@media (min-width: 1140px) {
+  aside {
+    height: auto;
+  }
 }
 
 .contenedor {
   margin: 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .contenedor h2 {
   color: #e9ab53;

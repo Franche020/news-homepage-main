@@ -1,48 +1,49 @@
-@use '../base/variables' as v;
-@use '../base/mixins' as m;
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
 
 aside {
-    margin: 5rem 0;
-    display: flex;
-    background-color: v.$darkblue;
+  margin: 5rem 0;
+  display: flex;
+  background-color: v.$darkblue;
+  height: fit-content;
+  @include m.small-desktop {
+    height: auto;
+  }
 }
-.contenedor{
-    margin: 2rem;
-    display: flex;
-    flex-direction: column;
-    h2 {
-        color: v.$orange;
-        margin-top: 2rem;
-        font-size: 3rem;
-    }
+.contenedor {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  h2 {
+    color: v.$orange;
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
 }
 .aside__seccion {
-    border-bottom: 0.1rem solid v.$Darkgray;
-    margin-top: 3rem;
-    a {
-        color: v.$white;
-        font-weight: 800;
-        font-size: 2rem;
-        &:hover {
-            color: v.$orange;
-        }
+  border-bottom: 0.1rem solid v.$Darkgray;
+  margin-top: 3rem;
+  a {
+    color: v.$white;
+    font-weight: 800;
+    font-size: 2rem;
+    &:hover {
+      color: v.$orange;
     }
+  }
+  p {
+    color: v.$Gray;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+  }
+  &:last-child {
+    border: none;
     p {
-        color: v.$Gray;
-        line-height: 1.8;
-        margin-bottom: 3rem;
-
+      margin-bottom: 0;
     }
-    &:last-child {
-        border: none;
-        p {
-            margin-bottom: 0;
-        }
-    }
-    &:first-child {
-        margin-top: 0;
-    }
+  }
+  &:first-child {
+    margin-top: 0;
+  }
 }
-
-// TODO Verificar los espacios entre los elementos para que la linea quede centrada
-

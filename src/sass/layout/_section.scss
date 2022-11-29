@@ -1,42 +1,41 @@
-@use '../base/variables' as v;
-@use '../base/mixins' as m;
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
 
 section {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    margin: 2rem 0 5rem 0;
-    @include m.mobile{
-        flex-direction: row;
-    }
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 2rem 0 5rem 0;
+  @include m.mobile {
+    flex-direction: row;
+  }
 }
 
 .seccion {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
 
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 2rem;
-    
-    .seccion__contenido {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        h4 {
-            color: v.$Gray;
-            font-size: 3rem;
-        }
-        a {
-            font-size: 1.8rem;
-            color: v.$darkblue;
-            font-weight: 800;
-            &:hover {
-                cursor: pointer;
-                color: v.$orange;
-            }
-        }
-        p {
-            line-height: 1.8;
-            margin: 0;
-        }
+  .seccion__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h4 {
+      color: v.$Gray;
+      font-size: 3rem;
     }
+    a {
+      font-size: 1.8rem;
+      color: v.$darkblue;
+      font-weight: 800;
+      &:hover {
+        cursor: pointer;
+        color: v.$orange;
+      }
+    }
+    p {
+      line-height: 1.8;
+      margin: 0;
+    }
+  }
 }

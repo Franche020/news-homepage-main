@@ -1,67 +1,61 @@
-@use '../base/variables' as v;
-@use '../base/mixins' as m;
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 3rem 0 4rem 0;
-    @include m.mobile{
-        margin-bottom: 0;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0 4rem 0;
+  @include m.mobile {
+    margin-bottom: 0;
+  }
 }
-
-.logo {
-
-}
-
 .navegacion {
-    .navegacion__boton{ //! Puede que tenga que sacar esto de aqui
-        cursor: pointer;
-        .navegacion__boton--mostrar{
-            @include m.mobile{
-                display:  flex; //! Ocultar boton
-            }
-            @include m.tablet{
-                display: none;
-            }
+  .navegacion__boton {
+    //! Puede que tenga que sacar esto de aqui
+    cursor: pointer;
+    .navegacion__boton--mostrar {
+      @include m.mobile {
+        display: flex; //! Ocultar boton
+      }
+      @include m.tablet {
+        display: none;
+      }
+    }
 
-        }
-        
-        .navegacion__boton--cerrar{
-            display: none;
-        }
+    .navegacion__boton--cerrar {
+      display: none;
     }
-    .navegacion__enlaces {
-        display: none;  //! Mostrar barra
-        flex-direction: column;  
-        position: absolute;
-        right: 0rem;
-        padding: 9rem 0 0 3rem;
-        width: 25rem;
-        height: 100%;
-        background-color: white;
-        gap: 3rem;  
-        
-        @include m.tablet{
-            display: flex;
-            position: inherit;
-            flex-direction: row;
-            gap: 2rem;      
-            width: auto;
-            height: auto;
-            padding: initial;
-        }
-        @include m.small-desktop{
-            gap: 5rem; 
-        }
-        a{            
-            color: v.$darkblue;
-            font-size: 2rem;       
-            &:hover{
-                color:v.$orange;
-            }
-        }
+  }
+  .navegacion__enlaces {
+    display: none; //! Mostrar barra
+    flex-direction: column;
+    position: absolute;
+    right: 0rem;
+    padding: 9rem 0 0 3rem;
+    width: 25rem;
+    height: 100%;
+    background-color: white;
+    gap: 3rem;
+
+    @include m.tablet {
+      display: flex;
+      position: inherit;
+      flex-direction: row;
+      gap: 2rem;
+      width: auto;
+      height: auto;
+      padding: initial;
     }
+    @include m.small-desktop {
+      gap: 5rem;
+    }
+    a {
+      color: v.$darkblue;
+      font-size: 2rem;
+      &:hover {
+        color: v.$orange;
+      }
+    }
+  }
 }
-

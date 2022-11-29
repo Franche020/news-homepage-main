@@ -1,56 +1,59 @@
-@use '../base/variables' as v;
-@use '../base/mixins' as m;
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
 
 html {
-    box-sizing: border-box; /*hack par box model*/
-    font-size: 62.5%;
+  box-sizing: border-box; /*hack par box model*/
+  font-size: 62.5%;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit; /*hack par box model*/
-}  
+*,
+*:before,
+*:after {
+  box-sizing: inherit; /*hack par box model*/
+}
 
 body {
-    font-size: 16px;
-    font-family: v.$inter;
+  font-size: 16px;
+  font-family: v.$inter;
 }
 
-h1,h2,h3,h4,h5,h5,h6 {
-    margin: 0;
-    padding: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
 p {
-    font-size: 1.5rem;
-    color: v.$Darkgray;
+  font-size: 1.5rem;
+  color: v.$Darkgray;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .contenedor__principal {
-    max-width: 144rem;
-    width: 95%;
-    margin: 0 auto;
-    @include m.mobile{
-        width: 80%;
-    }
+  max-width: 144rem;
+  max-width: 95%;
+  margin: 0 auto 2rem auto;
+  @include m.small-desktop {
+    max-width: 80%;
+  }
 }
 
-.hidden {
-    
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
 }
-
-
-
-
-
-
-
-.attribution { font-size: 1.1rem; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
