@@ -15,8 +15,6 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -30,7 +28,7 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop View](screenshots/Desktop.png)
-![Mobile View](screenshots/Mobile.png)![Menu View](screenshots/Mobile.png)
+![Mobile View](screenshots/Mobile.png)![Menu View](screenshots/Menu.png)
 
 ### Links
 
@@ -66,7 +64,9 @@ I learned how to modify style properties from Javascript, and how to detect wind
 
 ### Continued development
 
-I need to improve my coding in Javascript to create more efficient code
+I need to improve my coding in Javascript to create more efficient code.
+
+I estimated 9 Hours to develop but it takes 8 so it's pretty nice
 
 ### Useful resources
 
